@@ -34,6 +34,7 @@ export class ScheduleService {
 
     // 여기에 주기적으로 실행할 로직을 작성합니다.
     // 예: 다른 API를 요청하는 코드
+
     try {
       const spaces: SpaceDto[] = await this.messageService.getSpacesByHostId(
         host.id,

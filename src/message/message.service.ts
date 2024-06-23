@@ -65,6 +65,7 @@ export class MessageService {
     const spaces: SpaceDto[] = await this.prismaService.space.findMany({
       where: {
         hostId: hostId,
+        isMessage: 'Y',
       },
     });
 
